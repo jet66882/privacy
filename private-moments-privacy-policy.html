@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <title>Private Moments - Privacy Policy</title>
+  <style>
+    :root {
+      --bg: #07111f;
+      --card: rgba(16, 31, 50, 0.82);
+      --text: #f5f7fb;
+      --muted: #9eb0c7;
+      --line: rgba(255,255,255,.10);
+      --accent: #6ea8ff;
+      --shadow: 0 18px 50px rgba(0,0,0,.18);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+                   Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB",
+                   "Microsoft YaHei", sans-serif;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(64,114,181,.16), transparent 34%),
+        linear-gradient(180deg, #07111f 0%, #091521 100%);
+      color: var(--text);
+      line-height: 1.72;
+    }
+    .wrap {
+      width: min(920px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 32px 0 64px;
+    }
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .brand { font-size: 17px; font-weight: 700; letter-spacing: .2px; }
+    .lang {
+      display: inline-flex;
+      padding: 4px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      backdrop-filter: blur(18px);
+    }
+    .lang button {
+      appearance: none;
+      border: 0;
+      background: transparent;
+      color: var(--muted);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font: inherit;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .lang button.active {
+      color: var(--text);
+      background: rgba(255,255,255,.10);
+    }
+    .hero {
+      padding: 40px 36px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(20,38,61,.92), rgba(11,24,40,.88));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(20px);
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: clamp(34px, 6vw, 52px);
+      line-height: 1.08;
+      margin: 0 0 12px;
+      letter-spacing: -1.2px;
+    }
+    .subtitle { color: var(--muted); font-size: 16px; margin: 0; }
+    .meta { color: var(--muted); margin-top: 18px; font-size: 14px; }
+    .content {
+      padding: 30px 34px;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+      backdrop-filter: blur(18px);
+      box-shadow: var(--shadow);
+    }
+    section + section {
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+    h2 {
+      margin: 0 0 10px;
+      font-size: 22px;
+      line-height: 1.3;
+      letter-spacing: -.3px;
+    }
+    p { margin: 10px 0; }
+    ul { margin: 10px 0 0; padding-left: 22px; }
+    li + li { margin-top: 6px; }
+    .note {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.045);
+      color: var(--muted);
+      font-size: 14px;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      color: var(--muted);
+      text-align: center;
+      font-size: 13px;
+      margin-top: 24px;
+    }
+    [data-lang] { display: none; }
+    [data-lang].active { display: block; }
+    @media (max-width: 640px) {
+      .wrap { width: min(100% - 20px, 920px); padding-top: 18px; }
+      .hero { padding: 30px 22px; border-radius: 22px; }
+      .content { padding: 24px 20px; border-radius: 20px; }
+      .topbar { align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="topbar">
+      <div class="brand">Private Moments</div>
+      <div class="lang" role="group" aria-label="Language switch">
+        <button id="btn-en" class="active" type="button">English</button>
+        <button id="btn-zh" type="button">简体中文</button>
+      </div>
+    </div>
+
+    <div data-lang="en" class="active">
+      <header class="hero">
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Your private stories, only on this device.</p>
+        <p class="meta">Effective date: September 19, 2026</p>
+      </header>
+
+      <article class="content">
+        <section>
+          <h2>1. Overview</h2>
+          <p>Private Moments is designed to help you keep personal photos, videos, titles, and notes privately on your device.</p>
+          <p>We designed the app around a simple principle: your private content should remain under your control.</p>
+        </section>
+
+        <section>
+          <h2>2. Information We Do Not Collect</h2>
+          <p>Private Moments does not require an account and does not operate a server for your private vault content.</p>
+          <p>We do not collect, upload, or sell your private photos, videos, titles, notes, or vault contents.</p>
+          <ul>
+            <li>No account registration is required.</li>
+            <li>No private media is uploaded to our servers.</li>
+            <li>No private notes are uploaded to our servers.</li>
+            <li>No advertising SDK is used to profile your private content.</li>
+            <li>We do not sell your personal information.</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. On-Device Storage and Encryption</h2>
+          <p>Private Moments stores vault media locally on your device. Vault media and thumbnails are encrypted before being stored by the app.</p>
+          <p>Encryption keys are stored using Apple Keychain services. The app also uses iOS file protection to help protect local files when the device is locked.</p>
+          <p>Private vault storage is designed to remain on-device and is excluded from normal app backup where applicable.</p>
+        </section>
+
+        <section>
+          <h2>4. Photos and Videos</h2>
+          <p>If you choose to add photos or videos, Private Moments may request permission to access items you select from your Photos library.</p>
+          <p>Selected items are copied into the private vault and encrypted locally. If you choose the optional “Remove Originals from Photos” action, iOS may request additional Photos permission so the app can ask the system Photos library to delete those selected originals.</p>
+          <div class="note">If iCloud Photos is enabled, deleting an item from the Photos library may also delete it from other devices connected to the same iCloud Photos library.</div>
+        </section>
+
+        <section>
+          <h2>5. Face ID and Passcode</h2>
+          <p>Private Moments may use Face ID through Apple’s LocalAuthentication framework to unlock the app.</p>
+          <p>Face ID biometric data is handled by iOS. Private Moments does not receive or store your Face ID biometric data.</p>
+          <p>Your app passcode is used to verify access to the vault. The app does not store the passcode itself in plain text.</p>
+        </section>
+
+        <section>
+          <h2>6. In-App Purchases</h2>
+          <p>Private Moments may offer optional paid features through Apple’s App Store. Purchases and subscription transactions are processed by Apple.</p>
+          <p>We do not receive your full payment card details. Apple may process purchase-related information according to Apple’s own privacy policy and terms.</p>
+        </section>
+
+        <section>
+          <h2>7. Sharing and Exporting</h2>
+          <p>Private Moments allows you to export or share content when you explicitly choose to do so.</p>
+          <p>Once you export or share content outside Private Moments, that content is no longer controlled by the app and may be handled by Photos, Files, AirDrop, messaging apps, cloud services, or other services you select.</p>
+        </section>
+
+        <section>
+          <h2>8. Third-Party Services</h2>
+          <p>Private Moments relies on Apple system frameworks for features such as Photos access, Face ID, file sharing, and App Store purchases.</p>
+          <p>Those Apple services are governed by Apple’s own privacy practices and terms.</p>
+        </section>
+
+        <section>
+          <h2>9. Data Retention and Deletion</h2>
+          <p>Your vault content remains on your device until you delete it, export it, or remove the app and its local data.</p>
+          <p>Deleting content from Private Moments removes the corresponding local vault data used by the app. Deleting originals from Apple Photos is a separate action controlled through the Photos framework.</p>
+        </section>
+
+        <section>
+          <h2>10. Children’s Privacy</h2>
+          <p>Private Moments is not designed to knowingly collect personal information from children. Because the app does not require an account or upload private vault content to our servers, we do not intentionally collect children’s private vault content.</p>
+        </section>
+
+        <section>
+          <h2>11. Changes to This Privacy Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect changes to the app, legal requirements, or privacy practices.</p>
+          <p>When the policy is updated, the effective date at the top of this page will be revised.</p>
+        </section>
+
+        <section>
+          <h2>12. Contact</h2>
+          <p>If you have questions about this Privacy Policy, contact:</p>
+          <p><strong>Email:</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+          <p><strong>Developer:</strong> YOUR_DEVELOPER_NAME</p>
+        </section>
+      </article>
+    </div>
+
+    <div data-lang="zh">
+      <header class="hero">
+        <h1>隐私政策</h1>
+        <p class="subtitle">你的私人故事，只保留在这台设备上。</p>
+        <p class="meta">生效日期：2026 年 9 月 19 日</p>
+      </header>
+
+      <article class="content">
+        <section>
+          <h2>1. 概述</h2>
+          <p>Private Moments 用于帮助你在设备本地保存私人照片、视频、标题和文字记录。</p>
+          <p>我们围绕一个简单原则设计本应用：你的私人内容应始终由你掌控。</p>
+        </section>
+
+        <section>
+          <h2>2. 我们不会收集的信息</h2>
+          <p>Private Moments 无需注册账号，也不会通过服务器存储你的私人保险库内容。</p>
+          <p>我们不会收集、上传或出售你的私人照片、视频、标题、文字记录或保险库内容。</p>
+          <ul>
+            <li>无需注册账号。</li>
+            <li>不会将私人照片或视频上传至我们的服务器。</li>
+            <li>不会将私人文字记录上传至我们的服务器。</li>
+            <li>不会使用广告 SDK 分析你的私人内容。</li>
+            <li>不会出售你的个人信息。</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>3. 本地存储与加密</h2>
+          <p>Private Moments 将保险库中的媒体内容保存在你的设备本地。照片、视频及其缩略图在由应用保存前会进行加密。</p>
+          <p>加密密钥通过 Apple Keychain 保存。应用还使用 iOS 文件保护机制，在设备锁定时帮助保护本地文件。</p>
+          <p>Private Moments 的私人保险库设计为仅保存在本机，并在适用情况下排除于普通应用备份之外。</p>
+        </section>
+
+        <section>
+          <h2>4. 照片与视频权限</h2>
+          <p>当你主动添加照片或视频时，Private Moments 可能请求访问你从系统照片图库中选择的内容。</p>
+          <p>你选择的内容会复制到 Private Moments 的私人保险库中，并在本地加密。如果你主动选择“从照片中删除原件”，iOS 可能进一步要求照片图库权限，以允许应用向系统照片图库请求删除这些已选择的原始项目。</p>
+          <div class="note">如果你开启了“iCloud 照片”，从系统“照片”中删除内容可能同时影响使用同一 iCloud 照片图库的其他设备。</div>
+        </section>
+
+        <section>
+          <h2>5. Face ID 与密码</h2>
+          <p>Private Moments 可以通过 Apple 的 LocalAuthentication 框架使用 Face ID 解锁应用。</p>
+          <p>Face ID 生物识别数据由 iOS 系统处理，Private Moments 不会读取或保存你的 Face ID 生物识别数据。</p>
+          <p>应用密码用于验证你对私人保险库的访问。应用不会以明文形式保存你的密码。</p>
+        </section>
+
+        <section>
+          <h2>6. App 内购买</h2>
+          <p>Private Moments 可能通过 Apple App Store 提供可选的付费功能。购买及订阅交易由 Apple 处理。</p>
+          <p>我们不会获得你的完整银行卡或支付卡信息。与购买相关的信息可能由 Apple 根据其自身隐私政策和条款进行处理。</p>
+        </section>
+
+        <section>
+          <h2>7. 分享与导出</h2>
+          <p>只有在你明确选择时，Private Moments 才会执行内容导出或分享。</p>
+          <p>当内容被导出或分享至 Private Moments 之外后，该内容可能由“照片”“文件”、AirDrop、消息应用、云服务或其他由你选择的第三方应用或服务处理。</p>
+        </section>
+
+        <section>
+          <h2>8. 第三方服务</h2>
+          <p>Private Moments 使用 Apple 提供的系统框架实现照片访问、Face ID、文件分享以及 App Store 购买等功能。</p>
+          <p>这些 Apple 服务适用 Apple 自身的隐私政策和相关条款。</p>
+        </section>
+
+        <section>
+          <h2>9. 数据保留与删除</h2>
+          <p>你的私人保险库内容会保留在设备本地，直到你主动删除、导出，或删除应用及其本地数据。</p>
+          <p>在 Private Moments 中删除内容会删除应用所使用的对应本地保险库数据。从 Apple“照片”删除原件属于另外一个独立操作，并通过系统 Photos 框架完成。</p>
+        </section>
+
+        <section>
+          <h2>10. 儿童隐私</h2>
+          <p>Private Moments 并非以主动收集儿童个人信息为目的。由于本应用无需账号，并且不会将私人保险库内容上传至我们的服务器，我们不会主动收集儿童的私人保险库内容。</p>
+        </section>
+
+        <section>
+          <h2>11. 隐私政策更新</h2>
+          <p>我们可能根据应用功能变化、法律要求或隐私实践变化对本隐私政策进行更新。</p>
+          <p>政策更新后，本页面顶部的生效日期也会相应更新。</p>
+        </section>
+
+        <section>
+          <h2>12. 联系我们</h2>
+          <p>如果你对本隐私政策有任何疑问，请通过以下方式联系我们：</p>
+          <p><strong>邮箱：</strong> <a href="mailto:YOUR_EMAIL@example.com">YOUR_EMAIL@example.com</a></p>
+          <p><strong>开发者：</strong> YOUR_DEVELOPER_NAME</p>
+        </section>
+      </article>
+    </div>
+
+    <footer>© 2026 Private Moments</footer>
+  </main>
+
+  <script>
+    const en = document.getElementById('btn-en');
+    const zh = document.getElementById('btn-zh');
+    const sections = document.querySelectorAll('[data-lang]');
+
+    function setLanguage(lang) {
+      sections.forEach(el => el.classList.toggle('active', el.dataset.lang === lang));
+      en.classList.toggle('active', lang === 'en');
+      zh.classList.toggle('active', lang === 'zh');
+      document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
+      document.title = lang === 'zh'
+        ? 'Private Moments - 隐私政策'
+        : 'Private Moments - Privacy Policy';
+      localStorage.setItem('private-moments-language', lang);
+    }
+
+    en.addEventListener('click', () => setLanguage('en'));
+    zh.addEventListener('click', () => setLanguage('zh'));
+
+    const saved = localStorage.getItem('private-moments-language');
+    const browserZh = navigator.language && navigator.language.toLowerCase().startsWith('zh');
+    setLanguage(saved || (browserZh ? 'zh' : 'en'));
+  </script>
+</body>
+</html>
